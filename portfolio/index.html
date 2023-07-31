@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    lang="en"
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gr8kev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/91cf14b839.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="container">
+        <nav>
+          <img src="images/logo.png" class="logo"/>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi i'm <span>Kelvin</span> Obi</h1>
+        </div>
+      </div>
+    </div>
+    <!--body section starts-->
+    <div id="about">
+      <div id="container">
+        <div class="row">
+          <div class="about-c0l-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-c0l-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              libero adipisci sequi minus cupiditate nemo ex nesciunt iure quae
+              error eum, tempore autem? Autem repudiandae eaque dolorum
+              assumenda similique quibusdam?
+            </p>
+
+            <div class="tab-titles">
+         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android /ios Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023-current</span><br />Developer <br>Freelancing<br>Levitate.ng</li>
+               <!--<li><span>web Development</span><br />Web App Development</li>--> 
+                <li>
+                  <span>2022</span><br />Freelancing<br><span>Jobs</span><br>Divinelearninghub.com<br>Houseofjabez.ng<br>Vkaydiagnostics.com<br>emeralddigitalspace.com
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android /ios Apps
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----Services----->
+    <div id="services">
+      <div id="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>ui/uxDesign</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloremque obcaecati repellendus, nulla tempore molestias quibusdam delectus? Iste, aliquid! Earum quisquam fuga ad nisi ullam labore explicabo voluptatem iusto nemo?</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas  fa-crop-alt"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloremque obcaecati repellendus, nulla tempore molestias quibusdam delectus? Iste, aliquid! Earum quisquam fuga ad nisi ullam labore explicabo voluptatem iusto nemo?</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fab  fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloremque obcaecati repellendus, nulla tempore molestias quibusdam delectus? Iste, aliquid! Earum quisquam fuga ad nisi ullam labore explicabo voluptatem iusto nemo?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------portfolio-------------------------------->
+<div id="portfolio">
+    <div id="container">
+      <h1 class="sub-title">My Work</h1>
+    </div>
+</div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
